@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #3c2a10;
+  background-color: #fdfaf6;
+  line-height: 1.8;
+}
+
+/* ヘッダー */
+.header {
+  background-color: #fff7ec;
+  border-bottom: 1px solid #e0d5c3;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+.logo {
+  font-size: 1.2rem;
+}
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav a {
+  text-decoration: none;
+  color: #3c2a10;
+}
+
+/* ヒーロー */
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* コンテナ共通 */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* 当店について */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.about-content img {
+  width: 45%;
+  border-radius: 10px;
+}
+.about-text {
+  flex: 1;
+}
+
+/* ギャラリー */
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.gallery-images img {
+  width: 32%;
+  border-radius: 10px;
+}
+
+/* メニュー */
+.menu-section {
+  margin-bottom: 40px;
+}
+.menu-section h3 {
+  border-bottom: 2px solid #d1b48c;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+}
+.menu-section li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+/* 店舗情報 */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.info-item {
+  background: #fff7ec;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* フッター */
+.footer {
+  background-color: #3c2a10;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
